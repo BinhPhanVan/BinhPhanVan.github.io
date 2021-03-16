@@ -1,0 +1,58 @@
+*
+{
+    margin: 0;
+}
+ .container
+{
+    position:relative;
+    width: 100%;
+    height: 100%; 
+}
+.Icon-main
+{
+    position: absolute;
+    display:inline-block;
+    height: 100%;
+    width: 80px;
+    background-color: rgb(8, 8, 8); 
+    display: grid;
+}
+/* .Intro-content
+{
+    position: absolute;
+    display:inline-block;
+    margin: 0;
+    height: 100vh;
+    width: calc(100vw-80px);
+    margin-right: 0;
+    background-color:black;
+} */
+.Avatar
+{
+    position: relative;
+    background-color: rgb(57, 57, 139);
+    height: 80px;
+    width: 80px;
+}
+.Intro-content
+{
+    height: 100vh;
+    width: 100vw;
+    object-fit: contain;
+    float: right;
+    opacity: 0.8;
+    background-image: linear-gradient(135deg
+    ,rgba(0,0,0,.85) 100%,rgba(117,116,116,.69) 100%);
+}
+
+/* .container .menu
+{
+    position: absolute;
+    height: 100vh;
+    margin-top: 0;
+    margin-left: 0;
+    width: 40px;
+    display: grid;
+    background-color: azure;
+    
+}  */
