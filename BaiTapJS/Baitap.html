@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+h3
+{
+  text-align: center;
+  color: red;
+}
+.Content {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.Question
+{
+  display: block;
+  margin: 20px;
+  border: 1px solid rgb(8, 8, 8) ;
+  padding: 20px;
+  box-shadow: 5px 10px rgb(235, 113, 92);
+}
+</style>
+</head>
+<body>
+  <h3>Bài tập JavaScript_PVB</h3>
+  <div class="Question" onclick="openQuestion(event, 'Bai1')">
+    Bài 1 : Viết chương trình Javascript để hiện thị ngày giờ
+    <div id="Bai1" class="Content">
+      <button onclick="Cau_1()"> Kết quả</button>
+      <!-- <input type="text" id="Ket_qua_1"> -->
+      <p id="Ket_qua_1"></p>
+    </div>
+  </div>
+  
+  <div class="Question" onclick="openQuestion(event, 'Bai2')">
+    Bài 2 : Viết chương trình để in ra ngày tháng năm theo các định dạng mm-dd-
+yyyy, mm/dd/yyyy, dd-mm-yyyy, dd/mm/yyyy
+
+    <div id="Bai2" class="Content">
+      <button onclick="Cau_2()"> Kết quả</button>
+      <!-- <input type="text" id="Ket_qua_1"> -->
+      <p id="Ket_qua_2"></p> 
+    </div>
+  </div>
+
+  <div class="Question" onclick="openQuestion(event, 'Bai3')">
+    Bài 3 : Viết chương trình JavaScript để kiểm tra xem một số nguyên đã cho có
+    chuỗi chữ số tăng hay không
+    <div id="Bai3" class="Content">
+      Nhập vào : 
+      <input type="text" value="" id="Question_3"/>
+      <button onclick="Cau_3()">Kết quả</button>
+      <input type="text" value="" id="Answer_3">
+    </div>  
+  </div>
+  
+  <div class="Question" onclick="openQuestion(event, 'Bai4')">
+    Bài 4 : Viết một chương trình JavaScript để thay thế mọi ký tự trong một chuỗi đã cho với ký tự theo sau nó trong bảng chữ cái.
+    <div id="Bai4" class="Content">
+      Nhập vào : 
+      <input type="text" value="" id="Question_4"/>
+      <button onclick="Cau_4()">Kết quả</button>
+      <input type="text" value="" id="Answer_4">
+    </div>  
+  </div>
+
+  <div class="Question" onclick="openQuestion(event, 'Bai5')">
+    Bài 5 : Viết chương trình JavaScript để tạo chuỗi bằng cách sử dụng ba ký tự ở
+           giữa của một chuỗi có độ dài lẻ. Độ dài chuỗi phải lớn hơn hoặc bằng ba.
+    <div id="Bai5" class="Content">
+      Nhập vào : 
+      <input type="text" value="" id="Question_5"/>
+      <button onclick="Cau_5()">Kết quả</button>
+      <input type="text" value="" id="Answer_5">
+    </div>  
+  </div>
+  
+  <div class="Question" onclick="openQuestion(event, 'Bai6')">
+    Bài 6 : Viết chương trình hiển thị số xuất hiện nhiều lần nhất trong mảng
+    <div id="Bai6" class="Content">
+      Nhập vào : 
+      <input type="text" value="" id="Question_6"/>
+      <button onclick="Cau_6()">Kết quả</button>
+      <input type="text" value="" id="Answer_6">
+    </div>  
+  </div>
+
+  <div class="Question" onclick="openQuestion(event, 'Bai7')">
+    Bài 7 : Viết chương trình để kiểm tra xem chuỗi chứa &#39;java&#39; hay không
+    <div id="Bai7" class="Content">
+      Nhập vào : 
+      <input type="text" value="" id="Question_7"/>
+      <button onclick="Cau_7()">Kết quả</button>
+      <input type="text" value="" id="Answer_7" style="width:auto;">
+    </div>  
+  </div>
+
+  <div class="Question" onclick="openQuestion(event, 'Bai8')">
+    Bài 8 : Viết một hàm để lấy tên tháng từ một số cụ thể ( ví dụ : 1 – Tháng một )
+    <div id="Bai8" class="Content">
+      Nhập vào : 
+      <input type="text" value="" id="Question_8"/>
+      <button onclick="Cau_8()">Kết quả</button>
+      <input type="text" value="" id="Answer_8">
+    </div>  
+  </div>
+
+  <div class="Question" onclick="openQuestion(event, 'Bai9')">
+    Bài 9: Viết một hàm JavaScript nhập một chuỗi và tìm từ dài nhất trong chuỗi
+    <div id="Bai9" class="Content">
+      Nhập vào : 
+      <input type="text" value="" id="Question_9"/>
+      <button onclick="Cau_9()">Kết quả</button>
+      <input type="text" value="" id="Answer_9">
+    </div>  
+  </div>
+  
+  
+  <div class="Question" onclick="openQuestion(event, 'Bai10')">
+    Bài 10 : Viết chương trình tạo form HTML nhập 2 số và in ra giá trị là số nguyên
+  tố giữa 2 số đó
+    <div id="Bai10" class="Content">
+      Nhập vào số thứ nhất: 
+      <input type="text" value="" id="Question_10_1"/>
+      Nhập vào số thứ hai: 
+      <input type="text" value="" id="Question_10_2"/>
+      <button onclick="Cau_10()">Kết quả</button>
+      <input type="text" value="" id="Answer_10">
+    </div>  
+  </div>
+
+<script>
+function openQuestion(evt, QuestionName) 
+{
+  let i, Content, Question;
+  Content = document.getElementsByClassName("Content");
+  for (i = 0; i < Content.length; i++) 
+  {
+    Content[i].style.display = "none";
+  }
+  document.getElementById(QuestionName).style.display = "block";
+  document.getElementById(QuestionName).style.height="auto";
+}
+function Cau_1()
+{
+  let day = new Date();
+
+  document.getElementById("Ket_qua_1").innerHTML= 
+      "Ngày hiện tại: "+day.getDate()
+    +  " Giờ hiện tại: "+ day.getHours();
+}
+function Cau_2()
+{
+      let a = new Date();
+      let Nam= a.getUTCFullYear();
+      let Thang= a.getUTCMonth()+1;
+      let Ngay= a.getUTCDate();
+
+  document.getElementById("Ket_qua_2").innerHTML="dd-mm-yyyy" +"<br>"
+          + Ngay +"/" + Thang+"/"+ Nam +"<br>"
+          + Ngay +"-" + Thang+"-"+ Nam +"<br>"
+          +"mm-dd-yyyy"+"<br>"
+          + Thang +"/" + Ngay+"/"+ Nam +"<br>"
+          + Thang +"-" + Ngay+"-"+ Nam +"<br>"
+}
+function Cau_3()
+{
+  let number=document.getElementById("Question_3").value;
+ {
+    for(let i=0;i<number.length-1;i++)
+    {
+        if(number[i]>number[i+1])
+         return document.getElementById("Answer_3").value="Sai";
+    }
+    return document.getElementById("Answer_3").value="Đúng";
+  }
+}
+function Cau_4()
+{
+  let str=document.getElementById("Question_4").value;
+  Str1="";
+    for(let i=0;i<str.length;i++)
+    {
+        Str1 = Str1 + String.fromCharCode(str.charCodeAt(i)+1);
+    }
+    document.getElementById("Answer_4").value= Str1;
+}
+
+function Cau_5()
+{
+  let str=document.getElementById("Question_5").value;
+  let Str=str;
+    if((str.length>=3) && (str.length%2!=0))
+    {
+      let i= (str.length)/2 +0.5;
+      document.getElementById("Answer_5").value= str[i-2]+str[i-1]+str[i];
+    }
+    else
+    document.getElementById("Answer_5").value= "Du lieu khong hop le!!";
+}
+
+function Cau_6()
+{
+  let Str=document.getElementById("Question_6").value;
+  
+    let kitu="";
+    let max=0;
+    for(let i=0;i<Str.length-1;i++)
+    {
+      let a = Str.split(Str[i]).length-1;
+      if(a>max)
+      {
+          max=a;
+          kitu=Str[i];
+      }
+    }
+    document.getElementById("Answer_6").value= kitu + " xuat hien "  + max +" lan";
+}
+
+function Cau_7()
+{
+  let str=document.getElementById("Question_7").value;
+  let ketqua="";
+        if(str.indexOf("&#39;java&#39;")>0)
+      {
+          ketqua+="Chuoi xuat hien &#39;java&#39;";
+      }
+      else ketqua+="Chuoi khong xuat hien&#39;java&#39;";
+    document.getElementById("Answer_7").value=ketqua;
+}
+
+function Cau_8()
+{
+  let number=document.getElementById("Question_8").value;
+  let ketqua="";
+  switch(number)
+    {
+        case '1': ketqua="Tháng một"; break;
+        case '2': ketqua="Tháng hai"; break;
+        case '3': ketqua="Tháng ba"; break;
+        case '4': ketqua="Tháng tư";  break;
+        case '5': ketqua="Tháng năm"; break;
+        case '6': ketqua="Tháng sáu"; break;
+        case '7': ketqua="Tháng bảy"; break;
+        case '8': ketqua="Tháng tám"; break;
+        case '9':  ketqua="Tháng chín"; break;
+        case '10': ketqua="Tháng mười"; break;
+        case '11': ketqua="Tháng mười một"; break;
+        case '12': ketqua="Tháng mười hai"; break;
+        default : ketqua="Du lieu khong phu hop!!";
+    }
+    document.getElementById("Answer_8").value=ketqua;
+}
+
+function Cau_9()
+{
+  let str=document.getElementById("Question_9").value;
+  function isMax(chuoi)
+  {
+      let words=str.split(' ');
+      let max=0;
+      for(let i=0;i<words.length;i++)
+      {
+          if(words[i].length>max){
+              max=words[i].length;
+          }
+      }
+      return max;
+  }
+  function isMaxStr(chuoi)
+  {
+      let words=str.split(" ");
+      for(let i=0;i<words.length;i++)
+      {
+          if(words[i].length==isMax(chuoi)){
+              return words[i];
+          }
+      }
+  }
+    document.getElementById("Answer_9").value=isMaxStr(str);
+}
+
+function Cau_10()
+{
+  let number1=document.getElementById("Question_10_1").value;
+  let number2=document.getElementById("Question_10_2").value;
+  let a,b;
+  if(number1>number2)
+    {
+      a=number2;
+      b=number1;
+    }
+    else
+    {
+      a=number1;
+      b=number2;
+    }
+  function snt(number)
+  {
+    let d=0;
+    for(i=2;i<number;i++)
+    {
+       if(number%i==0) d++;
+          
+    }
+    if(d==0) return true; 
+       else return false; 
+  }
+  let ketqua="";
+    for(let i=a;i<=b;i++)
+    {
+        if(snt(i)==true) 
+         ketqua += i+";  ";
+    }
+    document.getElementById("Answer_10").value=ketqua;
+}
+
+</script>  
+</body>
+</html> 
