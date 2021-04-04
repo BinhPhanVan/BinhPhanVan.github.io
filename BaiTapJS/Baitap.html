@@ -206,7 +206,7 @@ function Cau_5()
 function Cau_6()
 {
   let Str=document.getElementById("Question_6").value;
-  
+    Str= Str.replace(" ","");
     let kitu="";
     let max=0;
     for(let i=0;i<Str.length-1;i++)
@@ -225,11 +225,11 @@ function Cau_7()
 {
   let str=document.getElementById("Question_7").value;
   let ketqua="";
-        if(str.indexOf("&#39;java&#39;")>0)
+      if(str.indexOf("java")>=0)
       {
-          ketqua+="Chuoi xuat hien &#39;java&#39;";
+          ketqua+="Chuoi xuat hien java";
       }
-      else ketqua+="Chuoi khong xuat hien&#39;java&#39;";
+      else ketqua+="Chuoi khong xuat hien java";
     document.getElementById("Answer_7").value=ketqua;
 }
 
