@@ -1,0 +1,126 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+h1
+{
+    text-align: center;
+}
+.Contain
+{  
+    width: 90%;
+    margin: auto;
+    height: 150px;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 5px 8px #888888;
+    margin-top: 20px;
+}
+.Item
+{   
+    position: relative;
+    width: 20%;
+    padding: 20px;
+    height: 100px;
+    display: inline-block;
+}
+.Item-detail
+{
+    position: absolute;
+
+}
+.Submit
+{
+    background-color: blue;
+    height: 30px;
+    width: 100px;
+    /* box-shadow: 5px 10px 8px #aeaaec; */
+}
+#img_set
+{
+    width: 100px;
+    height:70px;
+}
+p
+{
+    color: red;
+    font-size: small;
+}
+#table
+{
+    width: 100%;
+    margin: 20px;
+    height :auto;
+}
+#table  th
+ { 
+     border-bottom: 2px solid rgb(196, 184, 184); 
+ }
+ #table_detail
+ {
+     width: 100%;
+     margin: 20px;
+     height :auto;
+ }
+ #table_detail  th
+  { 
+      text-align: center;
+      margin: auto;
+  }
+  #table  td
+ { 
+     text-align: center;
+ }
+.item_new 
+  {
+      height: 90%;
+      width: 17%;
+      margin-top: 20px;
+      display: inline-block;
+  }
+#btn_Edit
+{
+    background-color: blue;
+    height: 30px;
+    width: 100px;
+
+}
+#btn_Delete
+{
+    
+    background-color: rgb(255, 38, 0);
+    height: 30px;
+    width: 100px;
+
+}
+#btn_Save
+{
+    background-color: rgb(0, 255, 34);
+    height: 30px;
+    width: 100px;
+    display: none;
+}
+#btn_Cancel
+{
+    
+    background-color: rgb(255, 51, 0);
+    height: 30px;
+    width: 100px;
+   display: none;
+
+}
+tbody
+{
+    text-align: center;
+}
+tbody tr
+{
+    margin-top: 20px;
+}
+#img_edit
+{
+    width: 100px;
+    height:70px;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+   
+</head>
+<body onload="loadData()">
+    <h1>Bài tập JS Cơ Bản</h1>
+    
+    <div class="Contain">
+        <div class="Item">
+            <div class="Item-detail">
+                <label for="Item-name" class="Itemname">Item name</label>
+                <br><br>
+                <input type="text" name="Item-name" id="input" oninput="myInputName()" >
+                <br><br>
+                <p id="warn_name">* Name is required</p>
+            </div>
+        </div>
+        <div class="Item">
+            <div class="Item-detail">
+                <label for="Item-name" class="Itemname">Category</label>
+                <br><br>
+                <select name="" id="myChoose" style="width:200px;" onchange="mySelected()">
+                    <option value="NoSelected">No Selected</option>
+                    <option value="Category1">Category1</option>
+                    <option value="Category2">Category2</option>
+                    <option value="Category3">Category3</option>
+                </select>
+                <br>
+                <br>
+                <p id="warn_selected">* Category is required</p>
+            </div>
+        </div>
+        <div class="Item">
+            <div class="Item-detail">
+                <label for="Item-name" class="Itemname">Choose File</label>
+                <br><br>
+                <input type="file" name="" id="img_file" onchange="checkImg()" accept="image/x-png,image/jpeg" />
+                <img src="" alt="Your image" id="img_set"/>
+                <br>
+                <br>
+                <p id="warn_choose">* No file selected</p>
+            </div>
+        </div>
+        <div class="Item">
+            <div class="Item-detail">
+                <button type="submit" class="Submit" id="submit" onclick="submit_item()">Submit Form</button>
+            </div>
+        </div>
+   </div>
+   <br>
+
+   <table id="table" style="background-color: rgb(69, 241, 161);" >
+       <thead>
+        <tr>
+            <th>#</th>
+            <th>Item Name</th>
+            <th>Category</th>
+            <th>Image</th>
+            <th>Action</th>
+        </tr>   
+       </thead>  
+       <tbody>
+       </tbody>    
+   </table>    
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="Script.js"></script>
+</body>
+</html>
