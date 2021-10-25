@@ -1,0 +1,44 @@
+.main-form
+{
+    /* position: absolute;
+    top: 50%; */
+    margin-left: 25%;
+    transform: translateX(-50%,-50%); 
+    border-radius: 50px;
+
+}
+.main-login
+{
+    height: 800px;
+    background: url(./source/img/bg_login.jpg) no-repeat center;
+    background-size: cover;
+   
+}
+.form-control, .btn
+{
+    border-radius: 50px;
+}
+.forgotpw
+{
+    text-align: center;
+    
+}
+.forgotpw a
+{
+    text-decoration: none;
+}
+.forgotpw a:hover
+{
+    text-decoration: underline;
+}
+.forgotpw a:active
+{
+    text-decoration: underline  rgb(241, 61, 85);
+}
+.avatar
+{
+    height: 100px;
+    width: 100px;
+    background: url(./source/img/default-image.jpg) no-repeat center;
+    background-size: cover;
+}
