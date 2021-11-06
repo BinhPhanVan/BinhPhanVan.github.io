@@ -1,0 +1,95 @@
+.main-form
+{
+    position: relative;
+    top:10%;
+    border-radius: 30px;
+
+}
+.main-join
+{
+    height: 800px;
+    background: url(../img/join_meet.jpg) no-repeat center;
+    background-size: cover;
+   
+}
+.form-control, .btn
+{
+    border-radius: 30px;
+}
+@media  (min-width: 200px)and (max-width: 500px) {
+    .main-form {width: 100%;}
+  }
+@media  (min-width: 500px)and (max-width: 700px) {
+    .main-form {width: 70%;
+        /* text-align: center; */
+        margin-left: 50%;
+        transform: translate(-50%,0%);}
+  }
+@media  (min-width: 700px) {
+    .main-form {width: 50%;
+    margin-left: 25%;
+    transform: translateX(-50%,-50%); }
+    }
+.avatar ,.input-ID
+{
+    /* text-align: center; */
+    margin-left: 50%;
+    transform: translate(-50%,0%);
+}
+.avatar img
+{
+    width:100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-left: 50%;
+    transform: translate(-50%,0%);
+    box-shadow: 2.6px 5.1px 5.1px hsl(0deg 0% 0% / 0.42);
+}
+.content
+{
+    text-align: center;
+    margin-left: 50%;
+    transform: translate(-50%,0%);
+}
+@media  (max-width: 400px) {
+    .avatar img
+    {
+        width:80px;
+        height: 80px;
+        
+    }
+  }
+.name-join
+{
+    font-family: math;
+    color: rgb(34, 140, 238);
+}
+.avatar i
+{
+    color: rgb(34, 140, 238);
+}
+.join
+{
+    text-align: center;
+    margin-left: 50%;
+    transform: translate(-50%,0%); 
+}
+.title:hover
+{
+
+    background-color: rgb(12, 85, 153);
+}
+.title:active
+{
+    background-color: rgb(12, 85, 153);
+    text-decoration: underline;
+}
+.nav-item
+{
+    color: white;
+}
+.tab_active
+{
+    background-color: rgb(12, 85, 153);
+    border-radius: 5px;
+}

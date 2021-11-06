@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="header.css">
+    <script src="home.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <script src="https://kit.fontawesome.com/28725eb711.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-lg-5" href="./home.html">ROOM</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse ms-5 " id="navbarSupportedContent">
+            <ul class="navbar-nav nav-pills me-auto mb-2 mb-lg-0" id="menu_tab">
+              <li class="nav-item  ms-3 tab_active">
+                <a class="title nav-link text-white" aria-current="page" href="#jsdhsjd">Trang chủ</a>
+                <span></span>
+              </li>
+              <li class="nav-item  ms-3">
+                <a class="title nav-link  text-white" aria-current="page" href="#newa">Tạo cuộc họp mới</a>
+                <span></span>
+              </li>
+              <li class="nav-item  ms-3">
+                <a class="title nav-link  text-white" aria-current="page" href="#newf">Tham gia cuộc họp</a>
+                <span></span>
+              </li>
+              <li class="nav-item  ms-3">
+                <a class="title nav-link  text-white" aria-current="page" href="#newd">Đăng nhập</a>
+                <span></span>
+              </li>
+              <li class="nav-item  ms-3">
+                <a class="title nav-link  text-white" aria-current="page" href="#newe">Đăng ký</a>
+                <span></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <script type="text/javascript">
+        var btnContainer = document.getElementById("menu_tab");
+
+        var btns = btnContainer.getElementsByClassName("nav-item");
+
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("tab_active");
+            current[0].className = current[0].className.replace(" tab_active", "");
+            this.className += " tab_active";
+          });
+        }
+      </script>
+</body>
+</html>

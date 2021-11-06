@@ -1,0 +1,19 @@
+.title:hover
+{
+
+    background-color: rgb(12, 85, 153);
+}
+.title:active
+{
+    background-color: rgb(12, 85, 153);
+    text-decoration: underline;
+}
+.tab_active
+{
+    background-color: rgb(12, 85, 153);
+    border-radius: 5px;
+}
+.nav-item
+{
+    color: white;
+}

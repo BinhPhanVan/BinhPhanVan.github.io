@@ -1,0 +1,162 @@
+.main-content
+{
+    margin-top: 50px;
+    height: 500px;
+    display: inline-block;
+}
+.task
+{
+    float: left;
+    width: 25%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: rgb(191, 199, 201);
+    border-radius: 20px;
+   
+}
+.content{
+    padding: 0px 30px;
+    box-sizing: border-box;
+    float: right;
+    width: 75%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 100%;
+}
+ul 
+{
+    list-style-type: none;
+}
+
+
+.label a
+{
+    padding: 12px 0;
+    border-bottom: 1px dashed #c9c9c9;
+    display: block;
+    margin: 0 15px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    color: #222222;
+    text-decoration: none;
+    border-radius: 20px;
+}
+.label a:hover
+{
+    background-color: #0e71eb;
+    margin: 0;
+    padding: 12px 15px;
+    color: #FFF;
+}
+.label a:active{
+    color: #fff;
+    background-color: #0e71eb;
+    margin: 0;
+    padding: 12px 15px;
+}
+.menuMeet ul a li:hover{
+    background-color: rgb(219, 30, 68);
+    color: white;
+}
+.menuMeet ul a li{
+    text-decoration: none;
+    color: black;
+}
+.menuMeet ul a li:hover{
+    color: white;
+}
+.chossen
+{
+    background-color: rgb(219, 30, 68);
+    color: white;
+}
+.chossen1{
+    background-color: #0e71eb;
+    color: white;
+    text-decoration: underline;
+}
+a
+{
+    text-decoration: none; 
+}
+.menuMeet ul a .list-group-item
+{
+    border-radius: 20px;
+}
+.list-group-item:hover
+{
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+    background-color: rgb(204, 204, 255);
+}
+.list-group-item a
+{
+    text-decoration: none;
+}
+.tab_active
+{
+    background-color: rgb(12, 85, 153);
+    border-radius: 5px;
+}
+.title:hover
+{
+
+    background-color: rgb(12, 85, 153);
+}
+.title:active
+{
+    background-color: rgb(12, 85, 153);
+    text-decoration: underline;
+}
+@media  (max-width: 800px) 
+{
+    .task{
+        padding-left: 0px;
+    }
+    .task  a
+    {
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+}
+@media  (min-width: 670px) 
+{
+    .dropdown
+    {
+        display: none;
+    }
+}
+@media  (max-width: 670px) 
+{
+    .task{
+        display: none;
+    }
+    .content{
+        width: 100%;
+    }
+    .dropdown
+    {
+        display: block;
+    }
+    #list_menu li
+    {
+        width: 200px;
+    }
+
+}
+.more{
+    position: absolute; 
+    right: 0px; 
+}
+.active_dropdown
+{
+    background-color: #0e71eb;
+    color: white;
+}
+.dropdown-item a:hover{
+    
+    color: white;
+    background-color: #0e71eb;
+}
